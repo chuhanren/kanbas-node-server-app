@@ -1,0 +1,38 @@
+[
+    { "_id": "M101",
+      "name": "Number Representation", "description": "Understanding number representation(Binary)", "course":"CS5002"
+    },
+    { "_id": "M102",
+      "name": "Statement Representation", "description": "Learn how two different statements may be logically equivalent",
+    "course": "CS5002"
+    },
+    { "_id": "M103",
+      "name": " Collection Representation ", "description": "This module covers sets--how to build them, various operations that you can perform on them, and why sets are a useful representation of collections of things", 
+      "course":  "CS5002"
+    },
+    { "_id": "M201",
+    "name": "Week 0 ——INTRO", "description": "Introduction to the course", 
+    "course":"CS5610"
+  },
+  { "_id": "M202",
+    "name": "Week 1 - HTML", "description": "Learn how to create user interfaces with HTML",
+  "course": "CS5610"
+  },
+  { "_id": "M203",
+    "name": "Week 2 - CSS", "description": "Introduction to CSS", 
+    "course":  "CS5610"
+  },
+  { "_id": "M301",
+  "name": "Week 0", "description": "Introduction to the course", 
+  "course":"CS5200"
+},
+{ "_id": "M302",
+  "name": "Week 1", "description": "Extend the UML representation for a Conceptual Design",
+"course": "CS5200"
+},
+{ "_id": "M303",
+  "name": "Week 2", "description": "DO: Learn the SQL CREATE Command", 
+  "course":  "CS5200"
+}
+  ]
+  
