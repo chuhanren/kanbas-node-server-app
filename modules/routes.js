@@ -1,10 +1,5 @@
 import db from "../Database/index.js";
 function ModuleRoutes(app) {
-  app.delete("/api/modules/:mid", (req, res) => {
-    const { mid } = req.params;
-    db.modules = db.modules.filter((m) => m._id !== mid);
-    res.sendStatus(200);
-  });
   app.put("/api/modules/:mid", (req, res) => {
     const { mid } = req.params;
     const moduleIndex = db.modules.findIndex((m) => m._id === mid);
@@ -30,6 +25,19 @@ function ModuleRoutes(app) {
     const { cid } = req.params;
     const modules = db.modules.filter((m) => m.course === cid);
     res.send(modules);
+  });
+
+  app.delete("/api/modules/:mid", (req, res) => {
+    const { mid } = req.params;
+    // db.modules = db.modules.filter((m) => m._id !== mid);
+    // res.sendStatus(200);
+    const index = Database.modules.findIndex((module) => module._id === mid);
+    if (index === -1) {
+      res.status(404).send("Module not found");
+      return;
+    }
+    Database.modules.splice(index, 1);
+    res.json(204);
   });
 }
 export default ModuleRoutes;
