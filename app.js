@@ -14,7 +14,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: process.env.FRONTEND_URL,
+    origin: "https://a6--glittering-youtiao-f3b141.netlify.app/",
   })
 );
 
