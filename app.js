@@ -18,7 +18,7 @@ mongoose.connect(CONNECTION_STRING);
 app.use(
   cors({
     credentials: true,
-    origin: "https://a6--glittering-youtiao-f3b141.netlify.app",
+    origin: process.env.FRONTEND_URL,
     // origin: "http://localhost:3000",
   })
 );
